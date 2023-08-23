@@ -56,7 +56,8 @@
     animation-duration: 2s;
   }
   
-  .cards__item__pic-wrap::after {
+  /* This is the css for blue "Adventure" on Card*/
+  .cards__item__pic-wrap::after { 
     content: attr(data-category);
     position: absolute;
     bottom: 0;
@@ -85,6 +86,7 @@
     transition: all 0.2s linear;
   }
   
+  /* This is the hover over Zoom */
   .cards__item__img:hover {
     transform: scale(1.1);
   }
@@ -99,6 +101,9 @@
     line-height: 24px;
   }
   
+  /* the media queries are what allow the cards to flex 
+  and re-arrange
+  */
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
       width: 84%;
